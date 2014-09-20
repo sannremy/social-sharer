@@ -1,0 +1,13 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="social-sharer" attributes="show link">
+	<template>
+		<ul class="social-sharer">
+			<template repeat="{{ social in socials }}">
+				<li class="{{ social.className }}"><a title="{{ social.title }}" href="{{ social.shareUrl }}">{{ social.name }}</a></li>
+			</template>
+		</ul>
+	</template>
+
+	<script src="social-sharer.js"></script>
+</polymer-element>

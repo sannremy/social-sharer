@@ -1,0 +1,22 @@
+{
+  "name": "social-sharer-web-component",
+  "version": "0.1.0",
+  "description": "A basic social sharer component",
+  "main": "src/social-sharer.html",
+  "keywords": [
+    "web- component",
+    "polymer",
+    "social",
+    "sharer",
+    "sharing"
+  ],
+  "authors": [
+    "Sann-Remy Chea"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/srchea/social-sharer-web-component",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "platform": "Polymer/platform#master"
+  }
+}

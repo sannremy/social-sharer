@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Component: Social Sharer</title>
+		<meta charset="utf-8">
+
+		<!-- import Web components and Polymer -->
+		<script src="components/platform/platform.js"></script>
+		<link rel="import" href="components/social-sharer/social-sharer.html">
+
+		<!-- fonts: Google Fonts 'Roboto' by Christian Robertson and Source Code Pro by Paul D. Hunt -->
+		<!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:100,300|Source+Code+Pro" rel="stylesheet" type="text/css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- page stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+		<!-- social-sharer theme -->
+		<link rel="stylesheet" type="text/css" href="css/social-sharer-theme.css" shim-shadowdom>
+	</head>
+	<body unresolved><!-- FOUC prevention -->
+		<div class="layout">
+			<div class="middle">
+				<h1 class="title">Social-Sharer</h1>
+				<h2 class="sub-title">Web Component</h2>
+				<!--
+					attributes:
+						- show: (mandatory, enum string) facebook, twitter, googleplus. Items will be shown regarding the order.
+						- link: (optional, string) custom link to share. If undefined, it will take the current URL.
+				-->
+				<div class="main">
+					<div id="social-sharer" class="flat-square">
+						<social-sharer show="twitter googleplus facebook" unresolved></social-sharer>
+					</div>
+
+					<div class="code">
+						<code>&lt;<span class="node">div</span> class="<span id="code-style">flat-square</span>"&gt;
+							<br />&nbsp;&nbsp;&lt;<span class="node">social-sharer</span> show="<span id="code-parameter">facebook twitter googleplus</span>" /&gt;
+							<br />&lt;/<span class="node">div</span>&gt;
+						</code>
+					</div>
+
+					<div class="configuration">
+						<ul id="parameter">
+							<li draggable="true"><input id="parameter-twitter" type="checkbox" value="twitter" /><label for="parameter-twitter"><span class="fa fa-ellipsis-v"></span>Twitter</label></li><li draggable="true"><input id="parameter-googleplus" type="checkbox" value="googleplus" /><label for="parameter-googleplus"><span class="fa fa-ellipsis-v"></span>Google+</label></li><li draggable="true"><input id="parameter-facebook" type="checkbox" value="facebook" /><label for="parameter-facebook"><span class="fa fa-ellipsis-v"></span>Facebook</label></li>
+						</ul>
+						<ul id="style">
+							<li><input id="style-square" type="radio" name="style" value="flat-square" checked="checked" /><label for="style-square">Square</label></li><li><input id="style-rounded" type="radio" name="style" value="flat-rounded" /><label for="style-rounded">Rounded</label></li><li><input id="style-label" type="radio" name="style" value="label" /><label for="style-label">Label</label></li>
+						</ul>
+					</div>
+
+					<div class="code-with-love"><a href="https://github.com/srchea"><span class="fa fa-code"></span> with <span class="fa fa-heart"></span> by Sann-Remy Chea</a></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/page.js"></script>
+	</body>
+</html>

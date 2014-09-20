@@ -1,0 +1,202 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(ellipse at center, rgba(250, 250, 250, 1) 0%,rgba(135, 206, 235, 1) 100%);
+}
+
+body[unresolved] {
+	opacity: 0;
+}
+
+.layout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.layout > .middle {
+	width: 420px;
+}
+
+.title {
+	margin: 0;
+	padding: 10px 20px;
+	color: #000;
+	background-color: #fff;
+	border: 1px #fff solid;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #fff;
+	text-align: center;
+}
+
+.sub-title {
+	margin: 0;
+	display: inline-block;
+	padding: 2px 5px;
+	color: #000;
+	background: #fff;
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #fff;
+}
+
+#social-sharer {
+	display: flex;
+	align-items: center;
+	height: 72px;
+}
+
+#parameter li[draggable=true] > label > span.fa-ellipsis-v {
+	cursor: move;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	opacity: .3;
+}
+
+#parameter label,
+#style label {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #fff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, .5);
+	background-color: rgba(255, 255, 255, .5);
+	transition: background-color .3s linear, color .3s linear, opacity .3s linear, box-shadow .3s linear;
+}
+
+#parameter li.disabled label > span.fa-ellipsis-v {
+	cursor: not-allowed;
+}
+
+#parameter li.move label {
+	opacity: .4;
+}
+
+#parameter li.over label {
+	box-shadow: 0 0 3px #888;
+}
+
+#parameter label {
+	padding-left: 14px;
+}
+
+#parameter input[type="checkbox"],
+#style input[type="radio"] {
+	display: none;
+}
+
+#parameter input[type="checkbox"]:checked + label,
+#style input[type="radio"]:checked + label {
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+div.main > div {
+	margin: 30px 0 0 0;
+}
+
+div.main ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div.main ul > li {
+	position: relative;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 8px;
+}
+
+div.main ul > li:last-of-type {
+	margin-right: 0;
+}
+
+div.configuration {
+	display: block;
+	padding: 0;
+	list-style: none;
+}
+
+#style {
+	margin-top: 8px;
+}
+
+div.code {
+	position: relative;
+}
+
+div.code > code {
+	display: block;
+	padding: 12px;
+	background: rgba(255, 255, 255, .6);
+	font-size: 0.74em;
+	font-family: 'Source Code Pro';
+	color: #bbb;
+}
+
+#code-style,
+#code-parameter {
+	color: #f1cc21;
+}
+
+span.node {
+	color: #b80000;
+}
+
+div.code-with-love > a {
+	display: inline-block;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: normal;
+	text-decoration: none;
+	color: rgba(0, 0, 0, .5);
+}
+
+div.code-with-love > a,
+div.code-with-love > a > span.fa {
+	transition: color .2s linear;
+}
+
+div.code-with-love > a:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+div.code-with-love > a > span.fa-heart {
+	color: rgba(217, 64, 82, .5);
+}
+
+div.code-with-love > a:hover > span.fa-heart {
+	color: rgba(217, 64, 82, 1);
+}
+
+div.code-with-love > a > span.fa-code {
+	color: rgba(14, 72, 80, .5);
+}
+
+div.code-with-love > a:hover > span.fa-code {
+	color: rgba(14, 72, 80, 1);
+}
