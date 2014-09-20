@@ -6,7 +6,6 @@ A basic Social Sharer Web component using [Polymer](https://www.polymer-project.
 Live demo
 ---------
 
-[Imgur](http://i.imgur.com/lAqhBr1.png)
 ![3 different styles of <social-sharer>](http://i.imgur.com/lAqhBr1.png "3 different styles of <social-sharer>")
 
 See a [live demo](http://srchea.com/apps/web-component-social-sharer/) on [http://srchea.com/apps/web-component-social-sharer/](http://srchea.com/apps/web-component-social-sharer/)
@@ -36,6 +35,6 @@ Parameters
 Dependancies
 ------------
 
-*Polymer: https://github.com/polymer/polymer
-*Platform: https://github.com/polymer/platform
+ * Polymer: https://github.com/polymer/polymer
+ * Platform: https://github.com/polymer/platform
 
