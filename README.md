@@ -24,7 +24,7 @@ First, import social-sharer package in `<head>`:
 Then, you can place the Web component wherever you want :)
 
 ```html
-<social-sharer show="twitter googleplus facebook" unresolved></social-sharer>
+<social-sharer show="twitter googleplus facebook"></social-sharer>
 ```
 
 Parameters
