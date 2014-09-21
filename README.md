@@ -6,14 +6,14 @@ A basic Social Sharer Web component using [Polymer](https://www.polymer-project.
 Live demo
 ---------
 
-![3 different styles of <social-sharer>](http://i.imgur.com/lAqhBr1.png "3 different styles of <social-sharer>")
+[![3 different styles of <social-sharer>](http://i.imgur.com/lAqhBr1.png)](http://srchea.com/apps/web-component-social-sharer/)
 
 See a [live demo](http://srchea.com/apps/web-component-social-sharer/) on [http://srchea.com/apps/web-component-social-sharer/](http://srchea.com/apps/web-component-social-sharer/)
 
 Usage
 -----
 
-First, import social-sharer package in `<head>`:
+First, import social-sharer package inside the `<head>`:
 
 ```html
 <!-- import Web components and Polymer -->
@@ -21,7 +21,7 @@ First, import social-sharer package in `<head>`:
 <link rel="import" href="components/social-sharer/social-sharer.html">
 ```
 
-Then, you can place the Web component wherever you want :)
+Then, you can place the Web component wherever you want inside the `<body>` :)
 
 ```html
 <social-sharer show="twitter googleplus facebook"></social-sharer>
@@ -32,7 +32,7 @@ Parameters
 
 `show` (string) a list of social sharers (separated by a space)
 
-Dependancies
+Dependencies
 ------------
 
  * Polymer: https://github.com/polymer/polymer
