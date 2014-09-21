@@ -1,7 +1,7 @@
 Web Component: Social Sharer
 ============================
 
-A basic Social Sharer Web component using [Polymer](https://www.polymer-project.org/).
+A basic Social Sharer Web component fully stylable using [Polymer](https://www.polymer-project.org/).
 
 Live demo
 ---------
@@ -30,8 +30,7 @@ Then, you can place the Web component wherever you want inside the `<body>` :)
 Parameters
 ----------
 
- * `show` (string) an ordered list of social sharers (separated by a space)
-   Example: "googleplus twitter" shows Google+ first, then Twitter
+ * `show` (string) an ordered list of social sharers (separated by a space), example: `"googleplus twitter"` shows Google+ first, then Twitter.
 
 Add extra social sharers
 ------------------------
