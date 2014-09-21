@@ -6,28 +6,26 @@ social-sharer[unresolved] {
  * Common rules
  */
 
-.flat-square /deep/ ul.social-sharer,
-.flat-rounded /deep/ ul.social-sharer,
+.square /deep/ ul.social-sharer,
+.circle /deep/ ul.social-sharer,
+.dark /deep/ ul.social-sharer,
 .label /deep/ ul.social-sharer {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.flat-square /deep/ ul.social-sharer > li,
-.flat-rounded /deep/ ul.social-sharer > li,
+.square /deep/ ul.social-sharer > li,
+.circle /deep/ ul.social-sharer > li,
+.dark /deep/ ul.social-sharer > li,
 .label /deep/ ul.social-sharer > li {
 	display: inline-block;
-}
-
-.flat-square /deep/ ul.social-sharer > li,
-.flat-rounded /deep/ ul.social-sharer > li,
-.label /deep/ ul.social-sharer > li {
 	margin-right: 10px;
 }
 
-.flat-square /deep/ ul.social-sharer > li > a,
-.flat-rounded /deep/ ul.social-sharer > li > a {
+.square /deep/ ul.social-sharer > li > a,
+.circle /deep/ ul.social-sharer > li > a,
+.dark /deep/ ul.social-sharer > li > a {
 	display: block;
 	width: 64px;
 	height: 64px;
@@ -40,47 +38,51 @@ social-sharer[unresolved] {
 	overflow: hidden;
 }
 
-.flat-square /deep/ ul.social-sharer > li:last-of-type,
-.flat-rounded /deep/ ul.social-sharer > li:last-of-type,
+.square /deep/ ul.social-sharer > li:last-of-type,
+.circle /deep/ ul.social-sharer > li:last-of-type,
+.dark /deep/ ul.social-sharer > li:last-of-type,
 .label /deep/ ul.social-sharer > li:last-of-type {
 	margin-right: 0;
 }
 
-.flat-square /deep/ ul.social-sharer > li.facebook > a,
-.flat-rounded /deep/ ul.social-sharer > li.facebook > a,
+.square /deep/ ul.social-sharer > li.facebook > a,
+.circle /deep/ ul.social-sharer > li.facebook > a,
 .label /deep/ ul.social-sharer > li.facebook > a {
 	background-color: rgb(59, 89, 152);
 	box-shadow: 1px 1px 1px rgb(59, 89, 152);
 }
 
-.flat-square /deep/ ul.social-sharer > li.twitter > a,
-.flat-rounded /deep/ ul.social-sharer > li.twitter > a,
+.square /deep/ ul.social-sharer > li.twitter > a,
+.circle /deep/ ul.social-sharer > li.twitter > a,
 .label /deep/ ul.social-sharer > li.twitter > a {
 	background-color: rgb(0, 172, 237);
 	box-shadow: 1px 1px 1px rgb(0, 172, 237);
 }
 
-.flat-square /deep/ ul.social-sharer > li.googleplus > a,
-.flat-rounded /deep/ ul.social-sharer > li.googleplus > a,
+.square /deep/ ul.social-sharer > li.googleplus > a,
+.circle /deep/ ul.social-sharer > li.googleplus > a,
 .label /deep/ ul.social-sharer > li.googleplus > a {
 	background-color: rgb(209, 72, 54);
 	box-shadow: 1px 1px 1px rgb(209, 72, 54);
 }
 
-.flat-square /deep/ ul.social-sharer > li.facebook > a,
-.flat-rounded /deep/ ul.social-sharer > li.facebook > a,
+.square /deep/ ul.social-sharer > li.facebook > a,
+.circle /deep/ ul.social-sharer > li.facebook > a,
+.dark /deep/ ul.social-sharer > li.facebook > a,
 .label /deep/ ul.social-sharer > li.facebook > a {
 	background-image: url(http://srchea.com/apps/web-component-social-sharer/images/icons/facebook-512.png);
 }
 
-.flat-square /deep/ ul.social-sharer > li.twitter > a,
-.flat-rounded /deep/ ul.social-sharer > li.twitter > a,
+.square /deep/ ul.social-sharer > li.twitter > a,
+.circle /deep/ ul.social-sharer > li.twitter > a,
+.dark /deep/ ul.social-sharer > li.twitter > a,
 .label /deep/ ul.social-sharer > li.twitter > a {
 	background-image: url(http://srchea.com/apps/web-component-social-sharer/images/icons/twitter-512.png);
 }
 
-.flat-square /deep/ ul.social-sharer > li.googleplus > a,
-.flat-rounded /deep/ ul.social-sharer > li.googleplus > a,
+.square /deep/ ul.social-sharer > li.googleplus > a,
+.circle /deep/ ul.social-sharer > li.googleplus > a,
+.dark /deep/ ul.social-sharer > li.googleplus > a,
 .label /deep/ ul.social-sharer > li.googleplus > a {
 	background-image: url(http://srchea.com/apps/web-component-social-sharer/images/icons/googleplus-512.png);
 }
@@ -89,15 +91,15 @@ social-sharer[unresolved] {
  * Flat square
  */
 
-.flat-square /deep/ ul.social-sharer > li > a {
+.square /deep/ ul.social-sharer > li > a {
 	transition: background-size .2s linear, border-radius .2s linear, padding .2s linear;
 }
 
-.flat-square /deep/ ul.social-sharer > li > a {
+.square /deep/ ul.social-sharer > li > a {
 	background-size: 75%;
 }
 
-.flat-square /deep/ ul.social-sharer > li > a:hover {
+.square /deep/ ul.social-sharer > li > a:hover {
 	background-size: 90%;
 }
 
@@ -105,22 +107,50 @@ social-sharer[unresolved] {
  * Flat rounded
  */
 
-.flat-rounded /deep/ ul.social-sharer > li > a {
+.circle /deep/ ul.social-sharer > li > a {
 	border-radius: 64px;
 	transition: transform .2s linear, border-radius .2s linear, padding .2s linear;
 }
 
-.flat-rounded /deep/ ul.social-sharer > li > a {
+.circle /deep/ ul.social-sharer > li > a {
 	background-size: 90%;
 }
 
-.flat-rounded /deep/ ul.social-sharer > li > a:hover {
+.circle /deep/ ul.social-sharer > li > a:hover {
 	transform: rotate(20deg);
+}
+
+/**
+ * Dark
+ */
+
+.dark /deep/ ul.social-sharer > li {
+	background: linear-gradient(to bottom, rgba(69, 72, 77, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	border-radius: 64px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.dark /deep/ ul.social-sharer > li > a {
+	background-size: 90%;
+	transition: transform .2s linear, border-radius .2s linear, padding .2s linear;
+}
+
+.dark /deep/ ul.social-sharer > li.facebook:hover {
+	background: rgb(59, 89, 152);
+}
+
+.dark /deep/ ul.social-sharer > li.twitter:hover {
+	background: rgb(0, 172, 237);
+}
+
+.dark /deep/ ul.social-sharer > li.googleplus:hover {
+	background: rgb(209, 72, 54);
 }
 
 /**
  * Label
  */
+
 .label /deep/ ul.social-sharer {
 	font-family: Arial, sans-serif;
 }
